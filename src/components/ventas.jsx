@@ -35,7 +35,7 @@ export default function Ventajas() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="mb-10 max-w-2xl">
           <h2 className="text-3xl font-black tracking-tight text-balance sm:text-4xl">
-            ¿Por qué comprar con Doorways?
+            ¿Por qué comprar con Novahu?
           </h2>
           <p className="mt-3 text-base-content/70 text-pretty">
             Somos tu aliado de abastecimiento en productos de limpieza e higiene institucional.

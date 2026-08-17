@@ -4,13 +4,13 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 export default function Contacto() {
   return (
-    <section id="contacto" className="bg-primary py-16 text-primary-content">
+    <section id="contacto" className="bg-base-200 py-16 ">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2">
         <div>
           <h2 className="text-3xl font-black tracking-tight text-balance sm:text-4xl">
             Solicita tu cotización al mayoreo
           </h2>
-          <p className="mt-4 max-w-md text-lg leading-relaxed text-primary-content/80 text-pretty">
+          <p className="mt-4 max-w-md text-lg leading-relaxed text-lance text-pretty">
             Cuéntanos qué presentaciones y volúmenes necesitas. Un asesor te responderá con precios
             y disponibilidad.
           </p>
@@ -31,13 +31,13 @@ export default function Contacto() {
               <span className="grid size-10 place-items-center rounded-box bg-primary-content/15">
                 <FontAwesomeIcon icon={faEnvelope} />
               </span>
-              ventas@doorwaysgt.com
+              ventas@novahu.com
             </a>
             <p className="flex items-center gap-3 text-lg font-semibold">
               <span className="grid size-10 place-items-center rounded-box bg-primary-content/15">
                 <FontAwesomeIcon icon={faLocationDot} />
               </span>
-              Ciudad de Guatemala, Guatemala
+              Ciudad de Cobán, Alta Verapaz, Guatemala
             </p>
           </div>
         </div>

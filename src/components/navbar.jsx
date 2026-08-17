@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faToiletPaper,
@@ -39,9 +40,17 @@ export default function Navbar() {
             </ul>
           </div>
           <a href="#inicio" className="flex items-center gap-2 px-2 text-primary">
-            <span className="grid size-9 place-items-center rounded-box bg-primary text-primary-content">
-              <FontAwesomeIcon icon={faToiletPaper} />
-            </span>
+            
+<div className="size-auto overflow-hidden rounded-full bg-white">
+  <Image
+    src="/logoblanco.png"
+    alt="NOVAHU"
+    width={52}
+    height={52}
+    className="h-full w-full object-cover"
+  />
+</div>
+
             <span className="text-xl font-extrabold tracking-tight text-base-content">
               NOVAHU
             </span>
