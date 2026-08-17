@@ -64,7 +64,7 @@ export default function Navbar() {
                     </a>
                 </div>
 
-                <nav className="navbar-center hidden lg:flex">
+                <nav className="navbar-center hidden lg:flex select-none">
                     <ul className="menu menu-horizontal gap-1 px-1 font-semibold">
                         {enlaces.map((e) => (
                             <li key={e.href}>
@@ -77,14 +77,14 @@ export default function Navbar() {
                 <div className="navbar-end gap-2">
                     <a
                         href="#contacto"
-                        className="btn btn-ghost btn-sm hidden sm:inline-flex">
+                        className="btn btn-ghost btn-sm md:btn-base hidden sm:inline-flex">
                         <FontAwesomeIcon icon={faPhone} />
                         Cotizar
                     </a>
                     <button
                         type="button"
                         onClick={() => setIsOpen(true)}
-                        className="btn btn-primary btn-sm"
+                        className="btn btn-primary btn-sm md:btn-base"
                         aria-label="Abrir carrito">
                         <div className="indicator">
                             {totalItems > 0 && (

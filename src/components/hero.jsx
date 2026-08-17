@@ -7,10 +7,12 @@ import {
 
 export default function Hero() {
     return (
-        <section id="inicio" className="relative overflow-hidden bg-base-100">
+        <section
+            id="inicio"
+            className="relative overflow-hidden bg-base-100 select-none">
             <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 lg:grid-cols-2 lg:py-20">
                 <div className="flex flex-col items-start gap-6">
-                    <span className="badge badge-lg border-primary/20 bg-primary/10 font-semibold text-primary">
+                    <span className="badge badge-lg border-primary/20 bg-primary/10 font-semibold text-primary animate-bounce p-2">
                         Venta por fardo. Cobán y alrederdores
                     </span>
                     <h1 className="text-4xl font-black leading-[1.05] tracking-tight text-balance sm:text-5xl lg:text-6xl">

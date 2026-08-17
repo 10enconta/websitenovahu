@@ -32,7 +32,7 @@ const ventajas = [
 
 export default function Ventajas() {
     return (
-        <section id="ventajas" className="bg-base-200 py-16">
+        <section id="ventajas" className="bg-base-200 py-16 select-none">
             <div className="mx-auto max-w-6xl px-4">
                 <div className="mb-10 max-w-2xl">
                     <h2 className="text-3xl font-black tracking-tight text-balance sm:text-4xl">
@@ -43,7 +43,7 @@ export default function Ventajas() {
                         limpieza e higiene institucional.
                     </p>
                 </div>
-                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 ">
                     {ventajas.map((v) => (
                         <div
                             key={v.titulo}

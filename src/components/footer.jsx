@@ -57,7 +57,7 @@ export default function Footer() {
             {/* CONTENIDO */}
             <div className="mx-auto grid max-w-6xl gap-10 px-4 pb-14 pt-24 sm:grid-cols-2 lg:grid-cols-4 ">
                 {/* MARCA */}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 select-none">
                     <a
                         href="#inicio"
                         className="flex items-center gap-2 text-lg font-extrabold">
@@ -75,8 +75,9 @@ export default function Footer() {
                     </a>
 
                     <p className="max-w-xs text-sm leading-6 text-white/70">
-                        Distribución mayorista de papel higiénico y productos de
-                        higiene institucional.
+                        Una nueva propuesta para disfrutar productos de calidad,
+                        con una atención cercana y pensada para las necesidades
+                        de cada hogar.
                     </p>
 
                     <p className="text-sm font-semibold text-[#36a2cd]">
@@ -85,24 +86,25 @@ export default function Footer() {
                 </div>
 
                 {/* CATÁLOGO */}
-                <div>
-                    <h4 className="mb-4 font-bold text-white">Catálogo</h4>
 
-                    <ul className="flex flex-col gap-3 text-sm">
-                        {catalogo.map((item) => (
-                            <li key={item.label}>
-                                <a
-                                    href={item.href}
-                                    className="text-white/70 transition-colors hover:text-[#36a2cd]">
-                                    {item.label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                {/* <div> */}
+                {/*     <h4 className="mb-4 font-bold text-white">Catálogo</h4> */}
+                {/**/}
+                {/*     <ul className="flex flex-col gap-3 text-sm"> */}
+                {/*         {catalogo.map((item) => ( */}
+                {/*             <li key={item.label}> */}
+                {/*                 <a */}
+                {/*                     href={item.href} */}
+                {/*                     className="text-white/70 transition-colors hover:text-[#36a2cd]"> */}
+                {/*                     {item.label} */}
+                {/*                 </a> */}
+                {/*             </li> */}
+                {/*         ))} */}
+                {/*     </ul> */}
+                {/* </div> */}
 
                 {/* EMPRESA */}
-                <div>
+                <div className="select-none">
                     <h4 className="mb-4 font-bold text-white">Empresa</h4>
 
                     <ul className="flex flex-col gap-3 text-sm">
@@ -119,8 +121,10 @@ export default function Footer() {
                 </div>
 
                 {/* REDES SOCIALES */}
-                <div>
-                    <h4 className="mb-4 font-bold text-white">Síguenos</h4>
+                <div className="select-none">
+                    <h4 className="mb-4 font-bold text-white">
+                        Proximamente Síguenos
+                    </h4>
 
                     <p className="mb-4 text-sm leading-6 text-white/70">
                         Estamos disponibles para ayudarte con tus pedidos y

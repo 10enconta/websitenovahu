@@ -24,9 +24,9 @@ function ProductoCard({ producto }) {
 
     return (
         <div className="card overflow-hidden border border-base-300 bg-base-100 transition-shadow hover:shadow-xl">
-            <figure className="relative aspect-square bg-base-200 p-6">
+            <figure className="relative aspect-square bg-base-200 p-6 ">
                 {producto.etiqueta && (
-                    <span className="badge badge-accent absolute top-3 font-semibold w-auto text-base p-2">
+                    <span className="badge badge-accent absolute top-3 font-semibold w-auto text-base p-2 select-none">
                         {producto.etiqueta}
                     </span>
                 )}
@@ -36,7 +36,7 @@ function ProductoCard({ producto }) {
                     className="h-full w-full object-contain transition-transform duration-300 hover:scale-105 mt-5"
                 />
             </figure>
-            <div className="card-body gap-2 p-4">
+            <div className="card-body gap-2 p-4 select-none">
                 <span className="text-xs font-bold uppercase tracking-wide text-primary">
                     {producto.categoria}
                 </span>
@@ -76,7 +76,7 @@ export default function Catalogo() {
     return (
         <section id="catalogo" className="bg-base-100 py-16">
             <div className="mx-auto max-w-6xl px-4">
-                <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between select-none">
                     <div>
                         <h2 className="text-3xl font-black tracking-tight text-balance sm:text-4xl">
                             Catálogo de papel higiénico
