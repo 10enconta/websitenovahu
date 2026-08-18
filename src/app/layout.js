@@ -29,7 +29,8 @@ export default function RootLayout({ children }) {
         <html
             lang="es"
             data-theme="NOVAHU"
-            className={`${nunito.variable} bg-base-200`}>
+            className={`${nunito.variable} bg-base-200`}
+            suppressHydrationWarning>
             <body className="font-sans antialiased">
                 {children}
 
