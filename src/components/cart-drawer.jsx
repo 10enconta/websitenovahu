@@ -11,7 +11,7 @@ import {
 import { faWhatsapp as faWhatsappBrand } from "@fortawesome/free-brands-svg-icons"
 import { useCart } from "./cart-context"
 
-const WHATSAPP_NUMBER = "502"
+const WHATSAPP_NUMBER = "50232025646"
 
 const fmt = (n) =>
     new Intl.NumberFormat("es-GT", {

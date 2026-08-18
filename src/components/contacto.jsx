@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
-const WHATSAPP_NUMBER = "5020000000"
+const WHATSAPP_NUMBER = "50232025646"
 
 const schema = z.object({
     nombre: z
@@ -88,7 +88,7 @@ ${resultado.data.mensaje}`
                             <span className="grid size-10 place-items-center rounded-box bg-primary-content/15">
                                 <FontAwesomeIcon icon={faWhatsapp} />
                             </span>
-                            +502 00000000
+                            +502 32025646
                         </a>
 
                         <p className="flex items-center gap-3 text-lg font-semibold">
