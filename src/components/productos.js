@@ -1,32 +1,33 @@
 // Catálogo de papel higiénico (datos de ejemplo inspirados en el catálogo de referencia)
 export const productos = [
     {
-        id: "bambu-1000-hojas-fardo",
+        id: "bambu-1000-hojas-fardo Verde",
         nombre: "Papel Higiénico de Bambú",
         categoria: "Fardo",
-        presentacion: "Fardo · 4 rollos · 1,000 hojas por rollo",
+        presentacion: "Fardo · 8 + rollos · 1,000 hojas por rollo",
         precio: 115.0,
-        imagen: "/original1.jpg",
+        imagen: "/verde.png",
         etiqueta: "Fardo",
     },
     {
-        id: "bambu-1000-hojas-4-rollos",
+        id: "bambu-1000-hojas-fardo Navahu",
+        nombre: "Papel Higiénico de Bambú",
+        categoria: "Fardo",
+        presentacion: "Paquete · 8 + rollos · 1,000 hojas por rollo",
+        precio: 115.0,
+        imagen: "/novahuazul.png",
+        etiqueta: "Más vendido",
+    },
+    {
+        id: "bambu-1000-hojas-4-rollos verde",
         nombre: "Papel Higiénico de Bambú",
         categoria: "4 rollos",
         presentacion: "Paquete · 4 rollos · 1,000 hojas por rollo",
         precio: 20.0,
-        imagen: "/nahublanco25g.jpg",
+        imagen: "/verde4.png",
         etiqueta: "Más vendido",
     },
-    // {
-    //     id: "jr-scott-500",
-    //     nombre: "Jumbo Roll Scott 6*1*500 Mts.",
-    //     categoria: "Jumbo Roll",
-    //     presentacion: "Caja 6 rollos · 500 mts",
-    //     precio: 275.0,
-    //     imagen: "/producto-jumbo.png",
-    //     etiqueta: null,
-    // },
+
     // {
     //     id: "center-pull-twins",
     //     nombre: "Jumbo Center Pull Twins 1*230",

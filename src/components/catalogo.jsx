@@ -33,7 +33,7 @@ function ProductoCard({ producto }) {
                 <img
                     src={producto.imagen || "/placeholder.svg"}
                     alt={producto.nombre}
-                    className="h-full w-full object-contain transition-transform duration-300 hover:scale-105 mt-5"
+                    className="h-full w-full object-contain transition-transform duration-300 hover:scale-125 mt-5"
                 />
             </figure>
             <div className="card-body gap-2 p-4">

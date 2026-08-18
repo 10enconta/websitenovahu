@@ -60,7 +60,7 @@ export default function Hero() {
                         aria-hidden="true"
                     />
                     <img
-                        src="/hero-papel.png"
+                        src="/nuevapresentacion.png"
                         alt="Rollos de papel higiénico institucional apilados"
                         className="w-full rounded-4xl border border-base-300 object-cover shadow-xl"
                     />

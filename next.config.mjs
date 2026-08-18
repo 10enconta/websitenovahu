@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactCompiler: true,
+    allowedDevOrigins: ["192.168.0.17"],
 
     async headers() {
         return [
