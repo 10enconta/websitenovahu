@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0](https://github.com/10enconta/websitenovahu/compare/websitetienda-v1.1.0...websitetienda-v1.2.0) (2026-08-18)
+
+
+### Features
+
+* **components:** change resposive pages ([d758f8d](https://github.com/10enconta/websitenovahu/commit/d758f8dc9ca7f38bb0c452cbd7f5ee077bd6198e))
+* **error,not-found:** add error, not found page ([6e9e8ac](https://github.com/10enconta/websitenovahu/commit/6e9e8acf593db8aa8a5bc8c576ed63efd3f36228))
+* **images:** change images ([5397b4f](https://github.com/10enconta/websitenovahu/commit/5397b4f7873700dcc543c5998621786f4c3bef67))
+* **images:** delete images ([2c69841](https://github.com/10enconta/websitenovahu/commit/2c69841297fe3df2f4cf719a137161b4e0673d39))
+
 ## [1.1.0](https://github.com/10enconta/websitenovahu/compare/websitetienda-v1.0.0...websitetienda-v1.1.0) (2026-08-17)
 
 
