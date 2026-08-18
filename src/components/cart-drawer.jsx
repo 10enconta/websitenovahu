@@ -11,7 +11,7 @@ import {
 import { faWhatsapp as faWhatsappBrand } from "@fortawesome/free-brands-svg-icons"
 import { useCart } from "./cart-context"
 
-const WHATSAPP_NUMBER = "50233373935"
+const WHATSAPP_NUMBER = "502"
 
 const fmt = (n) =>
     new Intl.NumberFormat("es-GT", {
@@ -68,7 +68,7 @@ Gracias.`
         <>
             {/* Overlay */}
             <div
-                className={`fixed inset-0 z-40 bg-black/40 transition-opacity ${
+                className={`fixed inset-0 z-[9998] bg-white w-auto transition-opacity duration-300 ${
                     isOpen ? "opacity-100" : "pointer-events-none opacity-0"
                 }`}
                 onClick={() => setIsOpen(false)}
@@ -76,11 +76,10 @@ Gracias.`
             />
 
             {/* Drawer */}
+
             <aside
-                className={`fixed right-0 top-0 z-50 flex h-screen w-full max-w-md flex-col bg-base-100 shadow-2xl transition-transform duration-300 ${
-                    isOpen ? "translate-x-0" : "translate-x-full"
-                }`}
-                aria-label="Carrito de compras">
+                className={`fixed inset-y-0 right-0 z-[9999] flex w-auto max-w-md flex-col ...
+        ${isOpen ? "translate-x-0" : "pointer-events-none translate-x-full"}`}>
                 {/* Header */}
                 <div className="flex items-center justify-between border-b border-base-300 p-4">
                     <h2 className="flex items-center gap-2 text-lg font-extrabold select-none">

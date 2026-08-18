@@ -36,28 +36,34 @@ function ProductoCard({ producto }) {
                     className="h-full w-full object-contain transition-transform duration-300 hover:scale-105 mt-5"
                 />
             </figure>
-            <div className="card-body gap-2 p-4 select-none">
-                <span className="text-xs font-bold uppercase tracking-wide text-primary">
+            <div className="card-body gap-2 p-4">
+                <span className="text-xs font-bold uppercase tracking-wide text-primary select-none">
                     {producto.categoria}
                 </span>
-                <h3 className="text-base font-bold leading-tight text-pretty">
+                <h3 className="text-base font-bold leading-tight text-pretty select-none">
                     {producto.nombre}
                 </h3>
-                <p className="text-sm text-base-content/60">
+                <p className="text-sm text-base-content/60 select-none">
                     {producto.presentacion}
                 </p>
-                <div className="mt-2 flex items-end justify-between gap-2">
+                <div className="mt-2 flex flex-col items-center justify-between gap-2">
                     <span className="text-xl font-black text-base-content">
                         {fmt(producto.precio)}
                     </span>
                     <button
                         type="button"
                         onClick={handleAdd}
-                        className={`btn btn-sm ${agregado ? "btn-success" : "btn-primary"}`}>
+                        onTouchEnd={(e) => {
+                            e.preventDefault()
+                            handleAdd()
+                        }}
+                        className={`btn btn-sm touch-manipulation ${
+                            agregado ? "btn-success" : "btn-primary"
+                        }`}>
                         <FontAwesomeIcon
                             icon={agregado ? faCheck : faCartPlus}
                         />
-                        {agregado ? "Agregado" : "Añadir"}
+                        <span>{agregado ? "Agregado" : "Añadir"}</span>
                     </button>
                 </div>
             </div>

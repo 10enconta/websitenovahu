@@ -18,8 +18,19 @@ const enlaces = [
 ]
 
 export default function Navbar() {
-    const { totalItems, setIsOpen } = useCart()
+    // const { totalItems, setIsOpen } = useCart()
+    const {
+        items,
+        totalItems,
+        totalPrecio,
+        isOpen,
+        setIsOpen,
+        updateQty,
+        removeItem,
+        clear,
+    } = useCart()
 
+    console.log("CartDrawer isOpen:", isOpen)
     return (
         <header className="sticky top-0 z-40 border-b border-base-300 bg-base-100/90 backdrop-blur text-black">
             <div className="navbar mx-auto max-w-6xl px-4">
@@ -83,8 +94,11 @@ export default function Navbar() {
                     </a>
                     <button
                         type="button"
-                        onClick={() => setIsOpen(true)}
-                        className="btn btn-primary btn-sm md:btn-base"
+                        onClick={() => {
+                            console.log("ABRIENDO CARRITO")
+                            setIsOpen(true)
+                        }}
+                        className="btn btn-primary btn-sm md:btn-base cursor-pointer touch-manipulation select-none"
                         aria-label="Abrir carrito">
                         <div className="indicator">
                             {totalItems > 0 && (
@@ -92,8 +106,10 @@ export default function Navbar() {
                                     {totalItems}
                                 </span>
                             )}
+
                             <FontAwesomeIcon icon={faCartShopping} />
                         </div>
+
                         <span className="hidden sm:inline">Carrito</span>
                     </button>
                 </div>

@@ -5,8 +5,8 @@ export const productos = [
         nombre: "Papel Higiénico de Bambú",
         categoria: "Fardo",
         presentacion: "Fardo · 4 rollos · 1,000 hojas por rollo",
-        precio: 109.0,
-        imagen: "/origirnal.png",
+        precio: 115.0,
+        imagen: "/original1.jpg",
         etiqueta: "Fardo",
     },
     {
@@ -14,8 +14,8 @@ export const productos = [
         nombre: "Papel Higiénico de Bambú",
         categoria: "4 rollos",
         presentacion: "Paquete · 4 rollos · 1,000 hojas por rollo",
-        precio: 34.0,
-        imagen: "/novahurollos.png",
+        precio: 20.0,
+        imagen: "/nahublanco25g.jpg",
         etiqueta: "Más vendido",
     },
     // {
