@@ -32,10 +32,7 @@ export default function CartDrawer() {
     } = useCart()
 
     function solicitarCotizacion() {
-        console.log("CLICK EN WHATSAPP")
-
         if (items.length === 0) {
-            console.log("El carrito está vacío")
             return
         }
 
@@ -64,8 +61,6 @@ Gracias.`
         const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
             texto,
         )}`
-
-        console.log("URL WHATSAPP:", url)
 
         // Cerrar carrito
         setIsOpen(false)

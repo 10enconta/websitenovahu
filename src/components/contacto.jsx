@@ -66,9 +66,6 @@ Gracias.`
             texto,
         )}`
 
-        console.log("ENVIANDO FORMULARIO A WHATSAPP")
-        console.log("URL:", url)
-
         window.location.href = url
     }
 
