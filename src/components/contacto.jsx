@@ -19,8 +19,8 @@ const schema = z.object({
         .string()
         .trim()
         .min(8, "Ingresa un teléfono válido")
-        .max(20, "El teléfono es demasiado largo"),
-
+        .max(20, "El teléfono es demasiado largo")
+        .regex(/^[0-9+\-\s()]+$/, "El teléfono contiene caracteres no válidos"),
     mensaje: z
         .string()
         .trim()
@@ -51,17 +51,25 @@ export default function Contacto() {
 
         const texto = `Hola NOVAHU.
 
-Mi nombre es: ${resultado.data.nombre}
-Mi teléfono: ${resultado.data.telefono}
+Me gustaría solicitar una cotización.
 
-Estoy interesado en su papel higiénico de bambú.
+Datos del cliente:
+Nombre: ${resultado.data.nombre}
+Teléfono / WhatsApp: ${resultado.data.telefono}
 
-Mi consulta:
-${resultado.data.mensaje}`
+Consulta:
+${resultado.data.mensaje}
 
-        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(texto)}`
+Gracias.`
 
-        window.open(url, "_blank", "noopener,noreferrer")
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+            texto,
+        )}`
+
+        console.log("ENVIANDO FORMULARIO A WHATSAPP")
+        console.log("URL:", url)
+
+        window.location.href = url
     }
 
     return (
@@ -82,8 +90,6 @@ ${resultado.data.mensaje}`
                     <div className="mt-8 flex flex-col gap-4">
                         <a
                             href={`https://wa.me/${WHATSAPP_NUMBER}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
                             className="flex items-center gap-3 text-lg font-semibold hover:underline">
                             <span className="grid size-10 place-items-center rounded-box bg-primary-content/15">
                                 <FontAwesomeIcon icon={faWhatsapp} />
