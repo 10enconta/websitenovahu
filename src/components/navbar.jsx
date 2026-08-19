@@ -59,7 +59,7 @@ export default function Navbar() {
                     <a
                         href="#inicio"
                         className="flex items-center gap-2 px-2 text-primary">
-                        <div className="size-auto overflow-hidden rounded-full bg-white">
+                        <div className="size-auto overflow-hidden hidden md:block rounded-full bg-white">
                             <Image
                                 src="/logoblanco.png"
                                 alt="NOVAHU"

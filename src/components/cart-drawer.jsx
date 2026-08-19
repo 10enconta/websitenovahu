@@ -32,15 +32,20 @@ export default function CartDrawer() {
     } = useCart()
 
     function solicitarCotizacion() {
-        if (items.length === 0) return
+        console.log("CLICK EN WHATSAPP")
+
+        if (items.length === 0) {
+            console.log("El carrito está vacío")
+            return
+        }
 
         const productos = items
             .map(
                 (item) =>
                     `• ${item.nombre}
-  Presentación: ${item.presentacion}
-  Cantidad: ${item.cantidad}
-  Subtotal: ${fmt(item.precio * item.cantidad)}`,
+Presentación: ${item.presentacion}
+Cantidad: ${item.cantidad}
+Subtotal: ${fmt(item.precio * item.cantidad)}`,
             )
             .join("\n\n")
 
@@ -60,26 +65,33 @@ Gracias.`
             texto,
         )}`
 
-        window.open(url, "_blank", "noopener,noreferrer")
+        console.log("URL WHATSAPP:", url)
+
+        // Cerrar carrito
         setIsOpen(false)
+
+        // Ir directamente a WhatsApp
+        window.location.href = url
     }
 
     return (
         <>
             {/* Overlay */}
             <div
-                className={`fixed inset-0 z-[9998] bg-white w-auto transition-opacity duration-300 ${
+                className={`fixed inset-0 z-[9998] bg-black/40 transition-opacity duration-300 ${
                     isOpen ? "opacity-100" : "pointer-events-none opacity-0"
                 }`}
                 onClick={() => setIsOpen(false)}
-                aria-hidden="true"
             />
 
             {/* Drawer */}
 
             <aside
-                className={`fixed inset-y-0 right-0 z-[9999] flex w-auto max-w-md flex-col ...
-        ${isOpen ? "translate-x-0" : "pointer-events-none translate-x-full"}`}>
+                className={`fixed inset-y-0 right-0 z-[9999] flex w-full max-w-md flex-col bg-base-100 shadow-2xl transition-transform duration-300 ${
+                    isOpen
+                        ? "translate-x-0"
+                        : "pointer-events-none translate-x-full"
+                }`}>
                 {/* Header */}
                 <div className="flex items-center justify-between border-b border-base-300 p-4">
                     <h2 className="flex items-center gap-2 text-lg font-extrabold select-none">
