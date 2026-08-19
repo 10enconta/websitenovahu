@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { z } from "zod"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
+import { faLocationDot, faClock } from "@fortawesome/free-solid-svg-icons"
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
 const WHATSAPP_NUMBER = "50232025646"
@@ -93,12 +93,17 @@ Gracias.`
                             </span>
                             +502 32025646
                         </a>
-
+                        <p className="flex items-center gap-3 text-lg font-semibold">
+                            <span className="grid size-10 place-items-center rounded-box bg-primary-content/15">
+                                <FontAwesomeIcon icon={faClock} />
+                            </span>
+                            Horario: 8:00 a. m. a 5:00 p. m.
+                        </p>
                         <p className="flex items-center gap-3 text-lg font-semibold">
                             <span className="grid size-10 place-items-center rounded-box bg-primary-content/15">
                                 <FontAwesomeIcon icon={faLocationDot} />
                             </span>
-                            Atención y entregas en Cobán y alrededores.
+                            Entregas en Cobán y alrededores.
                         </p>
                     </div>
                 </div>

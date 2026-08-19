@@ -13,10 +13,35 @@ const nunito = Nunito_Sans({
 })
 
 export const metadata = {
-    title: "Papel Higiénico al Mayoreo | Doorways",
+    title: "Papel Higiénico de Bambú en Cobán | NOVAHU",
     description:
-        "Distribuidor mayorista de papel higiénico institucional y para el hogar. Jumbo roll, center pull, mini JRT y más marcas al mejor precio.",
-    generator: "v0.app",
+        "Papel higiénico de bambú en Cobán y alrededores. Compra para hogar, negocios y por volumen. Solicita precios, disponibilidad y opciones de entrega por WhatsApp.",
+    keywords: [
+        "papel higiénico de bambú",
+        "papel higiénico bambú",
+        "papel higiénico en Cobán",
+        "papel higiénico Cobán",
+        "papel higiénico Guatemala",
+        "papel higiénico al por mayor",
+        "papel higiénico por mayor",
+        "papel higiénico para negocios",
+        "papel higiénico para empresas",
+        "papel higiénico para hoteles",
+        "papel higiénico para restaurantes",
+        "papel higiénico institucional",
+        "proveedor de papel higiénico",
+        "distribuidor de papel higiénico",
+        "papel higiénico ecológico",
+        "papel higiénico sostenible",
+        "papel higiénico de bambú Guatemala",
+        "papel higiénico de bambú Cobán",
+        "papel higiénico mayorista Cobán",
+        "papel higiénico al por mayor Guatemala",
+        "fardos de papel higiénico",
+        "papel higiénico por fardos",
+        "NOVAHU",
+    ],
+    generator: "Next.js",
 }
 
 export const viewport = {
