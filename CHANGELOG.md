@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0](https://github.com/10enconta/websitenovahu/compare/websitetienda-v1.2.0...websitetienda-v1.3.0) (2026-08-20)
+
+
+### Features
+
+* **contact:** add number ([adf01ef](https://github.com/10enconta/websitenovahu/commit/adf01efd54fa32c053d7a19537b66e8654cff881))
+* **Dockerfile:** Create Dockerfile website(@Romeoteni188) ([#5](https://github.com/10enconta/websitenovahu/issues/5)) ([c77b9eb](https://github.com/10enconta/websitenovahu/commit/c77b9ebf4302068d6da72eade4f87301ad503df2))
+
+
+### Bug Fixes
+
+* **contacto:** change function ([5934766](https://github.com/10enconta/websitenovahu/commit/59347666fa0301fc63c945b60b028de7552617bd))
+* **whatsapp:** change function ([9d0fc45](https://github.com/10enconta/websitenovahu/commit/9d0fc45ade6dab85d33a501bcfe5c2aee77925dd))
+
 ## [1.2.0](https://github.com/10enconta/websitenovahu/compare/websitetienda-v1.1.0...websitetienda-v1.2.0) (2026-08-18)
 
 
